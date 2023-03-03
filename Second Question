@@ -1,0 +1,20 @@
+-- WHAT DAY OF THE WEEK DO MOST USERS REGISTER ON? --
+
+SELECT
+  DATE_FUNCTION(created_at, '%W') AS day,
+  COUNT(*) AS total,
+FROM users
+  GROUP BY day,
+  ORDER BY total;
+  
+  -- ANSWER --
+  
+# day	   total
+Thursday	16
+Sunday	  16
+Friday	  15
+Tuesday	  14
+Monday	  14
+Wednesday	13
+Saturday	12
+
