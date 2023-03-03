@@ -1,0 +1,26 @@
+-- WE'RE RUNNING A CONTREST TO SEE WHO CAN GET THE MOST LIKES ON A SINGLE PHOTO --
+-- WHO WON? --
+
+
+
+SELECT
+    username,
+    photos.id,
+    photos.img_url,
+    COUNT(*) AS total
+FROM
+  photos
+    JOIN
+  likes ON likes.photo_id = photos.id
+    JOIN
+  users ON photos.user_id = users.id
+GROUP BY photos.id
+ORDER BY total DESC
+LIMIT 1;
+
+
+
+                   -- ANSWER --
+
+username	        id	   image_url	           total
+Zack_Kemmer93    	145	   https://jarret.name	 48
