@@ -1,4 +1,4 @@
--- 1. Finding 5 oldest users --
+-- Find the 5 oldest users --
 
 SELECT
   *
@@ -7,9 +7,9 @@ FROM users
  LIMIT 5;
  
  
- -- RESULT --
+ -- ANSWER --
  
-id	  username	        created_at
+ID	  Username	        Created_at
 80	  Darby_Herzog	    2016-05-06 00:14:21
 67	  Emilio_Bernier52	2016-05-06 13:04:30
 63	  Elenor88	        2016-05-08 01:30:41
