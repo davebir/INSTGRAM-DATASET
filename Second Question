@@ -1,4 +1,4 @@
--- WHAT DAY OF THE WEEK DO MOST USERS REGISTER ON? --
+-- What day of the week do most users register on? --
 
 SELECT
   DATE_FUNCTION(created_at, '%W') AS day,
@@ -9,7 +9,7 @@ FROM users
   
   -- ANSWER --
   
-# day	   total
+Day	     Total
 Thursday	16
 Sunday	  16
 Friday	  15
