@@ -1,4 +1,4 @@
-This was the capstone project for a MYSQL Bootcamp I completed March 3, 2023
+💻 This was the capstone project for a MYSQL Bootcamp I completed March 3, 2023 💻
 
 The data was a synthetic dataset my instructor created and then asked questions for us to solve
 
