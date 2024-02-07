@@ -17,10 +17,3 @@ AS avg_posting_per_user;
 
 # avg_posting_per_user
 2.5700
-
-
-
-
--- KEEP IN MIND --
-
-This number is thrown off significantly by bots (more in next questions...)
