@@ -1,33 +1,20 @@
--- WE WANT TO TARGET OUR INACTIVE USERS WITH AN EMAIL CAMPAIGN --
--- FIND THE USERS WHO HAVE NEVER POSTED A PHOTO BEFORE --
+-- We want to target our inactive users with an email campaign -> 
+Find the users who have never posed a photo before --
 
 
-
-SELECT
-
-  users.id,
-  
-  username,
-  
-FROM
-
-  users
-  
-      LEFT JOIN
-     photos ON photos.users_id = users.id
-     
-   WHERE
-     photos.id IS NULL
-     
-   ORDER BY users.id;
-   
+ SELECT username
+FROM users
+LEFT JOIN photos
+    ON users.id = photos.user_id
+WHERE photos.id IS NULL;
    
    
 -- ANSWER --
 
-# id	username
-5	Aniya_Hackett
-7	Kasandra_Homenick
+
+Id	Username
+5	  Aniya_Hackett
+7	  Kasandra_Homenick
 14	Jaclyn81
 21	Rocio33
 24	Maxwell.Halvorson
