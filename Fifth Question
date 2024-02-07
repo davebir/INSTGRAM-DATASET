@@ -1,19 +1,11 @@
--- OUR INVESTORS WANT TO KNOW... --
--- HOW MANY TIMES DOES THE AVERAGE USER POST --
+-- Our investors want to know how many times does the average user post? --
 
 
-
-
-SELECT 
-    (SELECT COUNT(*) FROM photos) 
-				/ 
-    (SELECT COUNT(*)FROM users)
-AS avg_posting_per_user;
-
-
-
+SELECT (SELECT Count(*) 
+        FROM   photos) / (SELECT Count(*) 
+                          FROM   users) AS avg; 
 
 -- ANSWER -- 
 
-# avg_posting_per_user
+Avg_posting_per_user
 2.5700
