@@ -1,0 +1,20 @@
+We have a bot problem -> Find users
+who have liked every single photo on the site
+
+SELECT username, 
+       Count(*) AS num_likes 
+FROM   users 
+       INNER JOIN likes 
+               ON users.id = likes.user_id 
+GROUP  BY likes.user_id 
+HAVING num_likes = (SELECT Count(*) 
+                    FROM   photos);
+
+-- ANSWER --
+Username        num_likes
+Aniya_Hackett      257
+Jaclyn81           257
+Rocio33            257
+Maxwell.Halvorson  257
+Janelle.Nikolaus81 257
+Bethany20          257
